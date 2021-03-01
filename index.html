@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Library</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>e-Library</h1>
+      </header>
+      <button class="btn new__book">+ Add New Book</button>
+      <div class="open-form hidden">
+        <button class="close-form">&times;</button>
+        <form class="book__form">
+          <p>Book Details</p>
+          <label for="title">Title</label>
+          <input
+            type="text"
+            name="title"
+            placeholder="Enter book title"
+            required
+          />
+          <label for="author">Author</label>
+          <input
+            type="text"
+            name="author"
+            placeholder="Enter author's name"
+            required
+          />
+          <label for="pages">No. of Pages</label>
+          <input
+            type="number"
+            name="pages"
+            placeholder="Enter no. of pages"
+            min="1"
+            required
+          />
+          <fieldset class="radio__group">
+            <legend>Have you read this book?</legend>
+            <input type="radio" name="radio" id="yes" value="Yes" />
+            <label for="yes">Yes</label>
+            <input type="radio" name="radio" id="no" value="No" />
+            <label for="no">No</label>
+          </fieldset>
+
+          <button type="submit" class="btn submit">Add Book</button>
+        </form>
+      </div>
+      <div class="books__container"></div>
+      <div class="overlay hidden"></div>
+    </div>
+    <footer>
+      <p>
+        Built by
+        <a href="https://github.com/Ajinkyap22" target="_blank"
+          >Ajinkya Palaskar</a
+        >|
+        <a href="https://github.com/Ajinkyap22/js-library" target="_blank"
+          >Source code</a
+        >
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
