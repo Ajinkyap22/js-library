@@ -213,8 +213,10 @@ header {
 
 footer {
   font-size: 16px;
-  margin: 10px;
+  padding: 5px;
   text-align: center;
+  background: #202020;
+  color: white;
 }
 
 a {
